@@ -8,6 +8,7 @@ namespace ChessBoard
         // Draws a checkerboard of ◻/◼ squares in the console.
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             // Prompt user for board size (Swedish) and placing a piece on the board.
             int sizeNumeric;
             do
@@ -39,8 +40,7 @@ namespace ChessBoard
             //Print chessboard with letters on the leftside from the Array
             for (int i = 1; i <= sizeNumeric; i++) 
             {
-                Console.OutputEncoding = Encoding.UTF8;
-                 Console.Write(rowChar[i-1]);
+                Console.Write(rowChar[i-1]);
 
                 // Alternating cells: empty (◻) and filled (◼) square ; ♕ replaces one cell based on the coordinates from user.
                 for (int j = 0; j < sizeNumeric; j++)
