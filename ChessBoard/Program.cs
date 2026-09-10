@@ -8,7 +8,7 @@ namespace ChessBoard
         // Draws a checkerboard of ◻/◼ squares in the console.
         static void Main(string[] args)
         {
-            Console.OutputEncoding = Encoding.UTF8;
+            Console.OutputEncoding = Encoding.UTF8; 
             // Prompt user for board size (Swedish) and placing a piece on the board.
             int sizeNumeric;
             do
