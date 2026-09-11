@@ -9,7 +9,7 @@ namespace ChessBoard
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8; 
-            // Prompt user for board size (Swedish) and placing a piece on the board.
+            // Prompt user for board size and placing a piece on the board.
             int sizeNumeric;
             do
             {
@@ -22,7 +22,7 @@ namespace ChessBoard
             }
             while (sizeNumeric < 1 || sizeNumeric > 10);
             
-            Console.WriteLine("Vill du placera en ♕ på Schackbrädan? Ange kordinater: ex. E6.  (Giltiga värden A-H och 1-10)" );
+            Console.WriteLine("Vill du placera en ♕ på Schackbrädan? Ange kordinater: ex. E6.(Giltiga värden A-H och 1-10)" );
             string pieceCoordinates = Console.ReadLine();
             
             // Parse coordinate: letter → column index, digit → row number
